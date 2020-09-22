@@ -68,6 +68,7 @@ function createGame(data) {
     let height = rows * (cardSize + 20);
     area.style.width = width + 'px';
     area.style.height = height + 'px';
+    document.getElementById('content').style.width = width + 'px';
   }
   document.querySelector('content h1').innerHTML = data.name; 
 }
