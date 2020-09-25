@@ -103,8 +103,11 @@ function isMatch(firstCard, secondCard) {
 
 function CardClick() {
   if (DisableClicks) return;
-  DisableClicks = true;
   var _currentCard = this;
+  if (LastCard && LastCard == _currentCard) {
+    return;
+  }
+  DisableClicks = true;
   FlipCard(_currentCard, () => {
     let matched = false;
     if (LastCard) {
