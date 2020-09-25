@@ -74,4 +74,5 @@ content h2 {
   color: white;
   border-radius: 5px;
   display: inline-block;
+  order: none;
 }
