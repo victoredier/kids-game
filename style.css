@@ -2,13 +2,15 @@
   background: #009fff;
   margin: auto;
   border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 290px 290px;
 }
 
 .card {
   margin: 10px;
-  float: left;
-  width: 90px;
-  height: 90px;
+  min-width: 90px;
+  min-height: 90px;
   background: orange;
   padding: 10px;
   border-radius: 5px;
@@ -28,22 +30,15 @@
   position: absolute;
   backface-visibility: hidden;
   background: white;
-  width: 90px;
-  height: 90px;
+  /*·width: 90px; */
+  /* height: 90px; */
 }
 .card .card-front img, .card .card-back img {
   width: 100%;
 }
-.card .card-front {
-  
-}
 
 .card .card-back {
   transform: rotateY(180deg);
-}
-
-.card .card-back img {
-  
 }
 
 body {
@@ -57,15 +52,6 @@ body {
   background: white;
   padding: 10px;
   border-radius: 0 0 5px 5px;
-}
-content {
-
-}
-content h1 {
-
-}
-content h2 {
-  
 }
 #reload {
   cursor: pointer;

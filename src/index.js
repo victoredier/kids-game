@@ -60,7 +60,7 @@ function createGame(data) {
   for (let i = listCards.length - 1; i >= 0; i--) {
     createCard(listCards[i], data.back);
   }
-  if (data.columns) {
+  if (data.columns && false) {
     let rows = Math.ceil(listCards.length / data.columns);
     let area = document.getElementById('area');
     let cardSize = 110;
