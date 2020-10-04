@@ -3,7 +3,7 @@
   margin: auto;
   border-radius: 5px;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   max-width: 1000px;
   grid-gap: 5px;
   padding: 5px;

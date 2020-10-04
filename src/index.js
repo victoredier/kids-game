@@ -60,15 +60,9 @@ function createGame(data) {
   for (let i = listCards.length - 1; i >= 0; i--) {
     createCard(listCards[i], data.back);
   }
-  if (data.columns && false) {
-    let rows = Math.ceil(listCards.length / data.columns);
-    let area = document.getElementById('area');
-    let cardSize = 110;
-    let width  = data.columns * (cardSize + 20);
-    let height = rows * (cardSize + 20);
-    area.style.width = width + 'px';
-    area.style.height = height + 'px';
-    document.getElementById('content').style.width = width + 'px';
+  if (data.columns) {
+    let columnsStyle = 'auto '.padEnd('auto '.length * data.columns, 'auto ').slice(0, -1);
+    document.getElementById('area').style.gridTemplateColumns = columnsStyle;
   }
   document.querySelector('content h1').innerHTML = data.name; 
 }
