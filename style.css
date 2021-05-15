@@ -40,6 +40,7 @@
 .card .card-front, .card .card-back {
   position: absolute;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background: white;
   /*·width: 90px; */
   /* height: 90px; */
